@@ -14,6 +14,7 @@
 		F26988761FA2B5DC00E94E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */; };
 		F26988811FA2B5DC00E94E03 /* QuickLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988801FA2B5DC00E94E03 /* QuickLinkTests.swift */; };
 		F269888C1FA2B5DC00E94E03 /* QuickLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */; };
+		F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988991FA2B6D700E94E03 /* MainScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F26988871FA2B5DC00E94E03 /* QuickLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkUITests.swift; sourceTree = "<group>"; };
 		F269888D1FA2B5DC00E94E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26988991FA2B6D700E94E03 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */,
 				F269886D1FA2B5DC00E94E03 /* ViewController.swift */,
 				F269886F1FA2B5DC00E94E03 /* Main.storyboard */,
+				F26988991FA2B6D700E94E03 /* MainScreenVC.swift */,
 				F26988721FA2B5DC00E94E03 /* Assets.xcassets */,
 				F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */,
 				F26988771FA2B5DC00E94E03 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */,
 				F269886E1FA2B5DC00E94E03 /* ViewController.swift in Sources */,
 				F269886C1FA2B5DC00E94E03 /* AppDelegate.swift in Sources */,
 			);
