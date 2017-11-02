@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21D574D1FAA876A0096D688 /* LinkUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D574C1FAA876A0096D688 /* LinkUpVC.swift */; };
+		F21D574F1FAAD92A0096D688 /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D574E1FAAD92A0096D688 /* BusinessCard.swift */; };
 		F269886C1FA2B5DC00E94E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */; };
-		F269886E1FA2B5DC00E94E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269886D1FA2B5DC00E94E03 /* ViewController.swift */; };
 		F26988711FA2B5DC00E94E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F269886F1FA2B5DC00E94E03 /* Main.storyboard */; };
 		F26988731FA2B5DC00E94E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26988721FA2B5DC00E94E03 /* Assets.xcassets */; };
 		F26988761FA2B5DC00E94E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21D574C1FAA876A0096D688 /* LinkUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkUpVC.swift; sourceTree = "<group>"; };
+		F21D574E1FAAD92A0096D688 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
 		F26988681FA2B5DC00E94E03 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F269886D1FA2B5DC00E94E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F26988701FA2B5DC00E94E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26988721FA2B5DC00E94E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26988751FA2B5DC00E94E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */,
-				F269886D1FA2B5DC00E94E03 /* ViewController.swift */,
 				F269886F1FA2B5DC00E94E03 /* Main.storyboard */,
+				F21D574E1FAAD92A0096D688 /* BusinessCard.swift */,
+				F21D574C1FAA876A0096D688 /* LinkUpVC.swift */,
 				F26988991FA2B6D700E94E03 /* MainScreenVC.swift */,
 				F26988721FA2B5DC00E94E03 /* Assets.xcassets */,
 				F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */,
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D574D1FAA876A0096D688 /* LinkUpVC.swift in Sources */,
 				F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */,
-				F269886E1FA2B5DC00E94E03 /* ViewController.swift in Sources */,
 				F269886C1FA2B5DC00E94E03 /* AppDelegate.swift in Sources */,
+				F21D574F1FAAD92A0096D688 /* BusinessCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +532,7 @@
 				F26988921FA2B5DC00E94E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26988931FA2B5DC00E94E03 /* Build configuration list for PBXNativeTarget "QuickLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				F26988951FA2B5DC00E94E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F26988961FA2B5DC00E94E03 /* Build configuration list for PBXNativeTarget "QuickLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				F26988981FA2B5DC00E94E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
