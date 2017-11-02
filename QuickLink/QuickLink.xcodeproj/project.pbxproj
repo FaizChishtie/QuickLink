@@ -16,6 +16,7 @@
 		F26988811FA2B5DC00E94E03 /* QuickLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988801FA2B5DC00E94E03 /* QuickLinkTests.swift */; };
 		F269888C1FA2B5DC00E94E03 /* QuickLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */; };
 		F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988991FA2B6D700E94E03 /* MainScreenVC.swift */; };
+		F2EF84E31FAB5A2100E3EED7 /* ProfileSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EF84E21FAB5A2100E3EED7 /* ProfileSetupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkUITests.swift; sourceTree = "<group>"; };
 		F269888D1FA2B5DC00E94E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F26988991FA2B6D700E94E03 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		F2EF84E21FAB5A2100E3EED7 /* ProfileSetupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */,
 				F269886F1FA2B5DC00E94E03 /* Main.storyboard */,
+				F2EF84E21FAB5A2100E3EED7 /* ProfileSetupVC.swift */,
 				F21D574E1FAAD92A0096D688 /* BusinessCard.swift */,
 				F21D574C1FAA876A0096D688 /* LinkUpVC.swift */,
 				F26988991FA2B6D700E94E03 /* MainScreenVC.swift */,
@@ -266,6 +269,7 @@
 				F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */,
 				F269886C1FA2B5DC00E94E03 /* AppDelegate.swift in Sources */,
 				F21D574F1FAAD92A0096D688 /* BusinessCard.swift in Sources */,
+				F2EF84E31FAB5A2100E3EED7 /* ProfileSetupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

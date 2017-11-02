@@ -9,11 +9,12 @@
 import Foundation
 
 class BusinessCard{
-    var FirstName: String = ""
-    var LastName: String = ""
-    var CellPhone: String = ""
-    var Email: String = ""
-    var LinkedIn: String = ""
+    var FirstName: String?
+    var LastName: String?
+    var CellPhone: String?
+    var Company: String?
+    var Email: String?
+    var LinkedIn: String?
     var isActive = false
     
 }
