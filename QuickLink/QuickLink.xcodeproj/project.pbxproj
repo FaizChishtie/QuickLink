@@ -12,7 +12,6 @@
 		F269886C1FA2B5DC00E94E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */; };
 		F26988711FA2B5DC00E94E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F269886F1FA2B5DC00E94E03 /* Main.storyboard */; };
 		F26988731FA2B5DC00E94E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26988721FA2B5DC00E94E03 /* Assets.xcassets */; };
-		F26988761FA2B5DC00E94E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */; };
 		F26988811FA2B5DC00E94E03 /* QuickLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988801FA2B5DC00E94E03 /* QuickLinkTests.swift */; };
 		F269888C1FA2B5DC00E94E03 /* QuickLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */; };
 		F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988991FA2B6D700E94E03 /* MainScreenVC.swift */; };
@@ -43,7 +42,6 @@
 		F269886B1FA2B5DC00E94E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26988701FA2B5DC00E94E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26988721FA2B5DC00E94E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F26988751FA2B5DC00E94E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F26988771FA2B5DC00E94E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F269887C1FA2B5DC00E94E03 /* QuickLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26988801FA2B5DC00E94E03 /* QuickLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkTests.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				F21D574C1FAA876A0096D688 /* LinkUpVC.swift */,
 				F26988991FA2B6D700E94E03 /* MainScreenVC.swift */,
 				F26988721FA2B5DC00E94E03 /* Assets.xcassets */,
-				F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */,
 				F26988771FA2B5DC00E94E03 /* Info.plist */,
 			);
 			path = QuickLink;
@@ -202,6 +199,14 @@
 				TargetAttributes = {
 					F26988671FA2B5DC00E94E03 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					F269887B1FA2B5DC00E94E03 = {
 						CreatedOnToolsVersion = 9.0;
@@ -238,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26988761FA2B5DC00E94E03 /* LaunchScreen.storyboard in Resources */,
 				F26988731FA2B5DC00E94E03 /* Assets.xcassets in Resources */,
 				F26988711FA2B5DC00E94E03 /* Main.storyboard in Resources */,
 			);
@@ -311,14 +315,6 @@
 				F26988701FA2B5DC00E94E03 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F26988741FA2B5DC00E94E03 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F26988751FA2B5DC00E94E03 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,8 +427,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8WD86XF3DB;
+				DEVELOPMENT_TEAM = 4X4HW99DBA;
 				INFOPLIST_FILE = QuickLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.masteq.QuickLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,8 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8WD86XF3DB;
+				DEVELOPMENT_TEAM = 4X4HW99DBA;
 				INFOPLIST_FILE = QuickLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.masteq.QuickLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";

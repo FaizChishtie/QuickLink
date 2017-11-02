@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Contacts
 class BusinessCard{
     var FirstName: String?
     var LastName: String?
@@ -16,5 +16,4 @@ class BusinessCard{
     var Email: String?
     var LinkedIn: String?
     var isActive = false
-    
 }

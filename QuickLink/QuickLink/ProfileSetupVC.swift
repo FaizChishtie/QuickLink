@@ -7,15 +7,35 @@
 //
 
 import UIKit
-
-class ProfileSetupVC: UIViewController {
+import Contacts
+class ProfileSetupVC: UIViewController, UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.FirstNameOutlet.delegate = self
+        self.LastNameOutlet.delegate = self
+        self.PhoneNumberOultet.delegate = self
+        self.CompanyOutlet.delegate = self
+        self.EmailOutlet.delegate = self
+        self.LinkedInOutlet.delegate = self
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        FirstNameOutlet.resignFirstResponder()
+        LastNameOutlet.resignFirstResponder()
+        PhoneNumberOultet.resignFirstResponder()
+        CompanyOutlet.resignFirstResponder()
+        EmailOutlet.resignFirstResponder()
+        LinkedInOutlet.resignFirstResponder()
+        return true
+    }
+    
     //Start Outlet Collection
     @IBOutlet weak var FirstNameOutlet: UITextField!
     @IBOutlet weak var LastNameOutlet: UITextField!
@@ -33,8 +53,24 @@ class ProfileSetupVC: UIViewController {
         let lin = String(describing: LinkedInOutlet)
         let e = String(describing: EmailOutlet)
         var user = createUser(firstName: f, lastName: l, company: c, cellPhone: p, email: e, linkedIn: lin)
-        
+        createContact(firstName: f, lastName: l, company: c, cellPhone: p, email: e, linkedIn: lin)
     }
+    
+    func createContact(firstName: String, lastName: String, company:String, cellPhone: String, email: String, linkedIn: String){
+        let contact = CNMutableContact()
+        contact.givenName = firstName
+        contact.familyName = lastName
+        let workEmail = CNLabeledValue(label: CNLabelWork, value: email as NSString)
+        contact.emailAddresses = [workEmail]
+        contact.phoneNumbers = [CNLabeledValue(label:CNLabelPhoneNumberMain, value:CNPhoneNumber(stringValue: cellPhone))]
+        //let linkedIn_val = CNLabeledValue(label: CNSocialProfile, value: linkedIn as NSString)
+        //contact.socialProfiles = [linkedIn_val as! CNLabeledValue<CNSocialProfile>]
+        let store = CNContactStore()
+        let saveRequest = CNSaveRequest()
+        saveRequest.add(contact, toContainerWithIdentifier:nil)
+        try! store.execute(saveRequest)
+    }
+    
     
     
     func createUser(firstName: String, lastName: String, company:String, cellPhone: String, email: String, linkedIn: String) -> BusinessCard{

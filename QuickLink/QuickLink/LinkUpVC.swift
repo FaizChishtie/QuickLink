@@ -28,7 +28,7 @@ class LinkUpVC: UIViewController {
     
     func showActivityViewController(){
         let imageToShare = [#imageLiteral(resourceName: "IMG_4605")]
-        let activityViewController = UIActivityViewController(activityItems: [imageToShare], applicationActivities: nil)
+        let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities: nil)
         present(activityViewController,animated: true, completion:nil)
         
     }
