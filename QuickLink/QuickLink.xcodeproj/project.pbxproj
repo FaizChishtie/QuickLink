@@ -15,6 +15,7 @@
 		F26988811FA2B5DC00E94E03 /* QuickLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988801FA2B5DC00E94E03 /* QuickLinkTests.swift */; };
 		F269888C1FA2B5DC00E94E03 /* QuickLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */; };
 		F269889A1FA2B6D700E94E03 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26988991FA2B6D700E94E03 /* MainScreenVC.swift */; };
+		F2D7776F1FAC065F00DA6A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D7776E1FAC065F00DA6A7D /* LaunchScreen.storyboard */; };
 		F2EF84E31FAB5A2100E3EED7 /* ProfileSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EF84E21FAB5A2100E3EED7 /* ProfileSetupVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		F269888B1FA2B5DC00E94E03 /* QuickLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkUITests.swift; sourceTree = "<group>"; };
 		F269888D1FA2B5DC00E94E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F26988991FA2B6D700E94E03 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		F2D7776E1FAC065F00DA6A7D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2EF84E21FAB5A2100E3EED7 /* ProfileSetupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				F21D574C1FAA876A0096D688 /* LinkUpVC.swift */,
 				F26988991FA2B6D700E94E03 /* MainScreenVC.swift */,
 				F26988721FA2B5DC00E94E03 /* Assets.xcassets */,
+				F2D7776E1FAC065F00DA6A7D /* LaunchScreen.storyboard */,
 				F26988771FA2B5DC00E94E03 /* Info.plist */,
 			);
 			path = QuickLink;
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D7776F1FAC065F00DA6A7D /* LaunchScreen.storyboard in Resources */,
 				F26988731FA2B5DC00E94E03 /* Assets.xcassets in Resources */,
 				F26988711FA2B5DC00E94E03 /* Main.storyboard in Resources */,
 			);
@@ -431,7 +435,7 @@
 				INFOPLIST_FILE = QuickLink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.masteq.QuickLink;
+				PRODUCT_BUNDLE_IDENTIFIER = 4X4HW99DBA.org.masteq.QuickLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,7 +450,7 @@
 				INFOPLIST_FILE = QuickLink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.masteq.QuickLink;
+				PRODUCT_BUNDLE_IDENTIFIER = 4X4HW99DBA.org.masteq.QuickLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
