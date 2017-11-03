@@ -52,7 +52,6 @@ class ProfileSetupVC: UIViewController, UITextFieldDelegate{
         let p = String(describing: PhoneNumberOultet)
         let lin = String(describing: LinkedInOutlet)
         let e = String(describing: EmailOutlet)
-        var user = createUser(firstName: f, lastName: l, company: c, cellPhone: p, email: e, linkedIn: lin)
         createContact(firstName: f, lastName: l, company: c, cellPhone: p, email: e, linkedIn: lin)
     }
     
@@ -72,16 +71,4 @@ class ProfileSetupVC: UIViewController, UITextFieldDelegate{
     }
     
     
-    
-    func createUser(firstName: String, lastName: String, company:String, cellPhone: String, email: String, linkedIn: String) -> BusinessCard{
-        var user = BusinessCard()
-        user.FirstName=firstName
-        user.LastName=lastName
-        user.CellPhone=cellPhone
-        user.Company=company
-        user.Email=email
-        user.LinkedIn=linkedIn
-        user.isActive=true
-        return user
-    }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Contacts
 
 class LinkUpVC: UIViewController {
 
@@ -27,6 +28,7 @@ class LinkUpVC: UIViewController {
     }
     
     func showActivityViewController(){
+        let store = CNContactStore()
         let imageToShare = [#imageLiteral(resourceName: "IMG_4605")]
         let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities: nil)
         present(activityViewController,animated: true, completion:nil)
